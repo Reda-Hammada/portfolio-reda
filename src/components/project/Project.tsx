@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Projects = () => {
+const Project = () => {
   return (
     <section>
         
@@ -8,4 +8,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default Project;

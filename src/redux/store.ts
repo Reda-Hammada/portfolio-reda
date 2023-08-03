@@ -4,7 +4,13 @@ import projectReducer from '../services/projects/projectSlice'
 
 
 
-export default configureStore({
-    profile:profileReducer,
+ const store = configureStore({
+   reducer:{
+    profile:profileReducer,         
     projects:projectReducer,
+   }
 })
+
+export type RootState = ReturnType<typeof store.getState>;
+
+export default store;

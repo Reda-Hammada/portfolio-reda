@@ -1,7 +1,6 @@
 import React from 'react'
-import PropTypes from "prop-types";
-
-const ReusableButton = (props) => {
+import { ButtonPropsType } from './Button.type';
+const ReusableButton = (props:ButtonPropsType) => {
 
  const {text,className} = props;
  
@@ -15,9 +14,6 @@ const ReusableButton = (props) => {
 }
 
 
-ReusableButton.propTypes = {
-    text: PropTypes.string.isRequired,
-    className: PropTypes.string.isRequired,
-  };
+
 
 export default ReusableButton

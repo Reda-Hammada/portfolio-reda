@@ -1,6 +1,6 @@
 import React from 'react'
 import reda from '../assets/images/reda.jpeg'
-import ReusableButton from './ReusableButton'
+import ReusableButton from '../button/ReusableButton'
 import { SocialIcon } from 'react-social-icons'
 
 const Hero = () => {

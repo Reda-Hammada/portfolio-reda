@@ -1,7 +1,12 @@
 import {createSlice} from '@reduxjs/toolkit';
-import { profileService } from './profileService';
 
-const initialState  = {
+interface initialStateType {
+    profile:[],
+    success:boolean,
+    error:boolean,
+
+}
+const initialState:initialStateType  = {
     profile : [],
     success: false,
     error: false,

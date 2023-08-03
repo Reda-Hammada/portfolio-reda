@@ -1,6 +1,5 @@
 import React from 'react'
 import reda from '../assets/images/coder.jpg'
-
 const About = () => {
   return (
     <div className='w-[100%]   mt-12 mb-32'>
