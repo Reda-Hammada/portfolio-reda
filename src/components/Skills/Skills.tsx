@@ -1,13 +1,14 @@
 import React from 'react'
-import HTML from '../assets/images/html-5.svg'
-import CSS from '../assets/images/css-3.svg'
-import Tailwind from '../assets/images/tailwindcss-icon.svg'
-import JavaScript from '../assets/images/javascript.svg'
-import TypeScript from '../assets/images/typescript-icon.svg';
-import ReactJs from '../assets/images/react.svg'
-import VueJs from '../assets/images/vue.svg'
-import PHP from '../assets/images/php.svg'
-import Laravel from '../assets/images/laravel.svg'
+import ReusableImage from '../ImageComponent/ReusableImage'
+import HTML from '../../assets/images/html-5.svg'
+import CSS from '../../assets/images/css-3.svg'
+import Tailwind from '../../assets/images/tailwindcss-icon.svg'
+import JavaScript from '../../assets/images/javascript.svg'
+import TypeScript from '../../assets/images/typescript-icon.svg';
+import ReactJs from '../../assets/images/react.svg'
+import VueJs from '../../assets/images/vue.svg'
+import PHP from '../../assets/images/php.svg'
+import Laravel from '../../assets/images/laravel.svg'
 
 const Skills = () => {
   return (
@@ -17,51 +18,71 @@ const Skills = () => {
           <h2>Skills</h2>
         </div>
         <div className='flex  max-[800px]:w-[100%]  flex-wrap mt-7 w-[90m%]'>
-            <div className='w-[110px] ml-3 mt-4  rounded shadow-sm text-center bg-white '>
-              <img className='w-[50%] ml-auto mr-auto mt-5 '
-                  src={HTML}
-                  alt='html icon' />
-            </div>
-            <div className='w-[110px] ml-3 mt-4  rounded shadow-sm text-center bg-white '>
-              <img className='w-[50%] max-[800px]:mb-3 ml-auto mr-auto mt-5 mb-3'
-                  src={CSS}
-                  alt='css icon' />
-            </div>
-            <div className='w-[110px] h-content ml-3 mt-4  rounded shadow-sm text-center bg-white '>
-              <img className='w-[50%] max-[800px]:mb-3 ml-auto mr-auto mt-10'
-                  src={Tailwind}
-                  alt='tailwind css icon' />
-            </div>
-            <div className='w-[110px] h-content ml-3 mt-4 rounded shadow-sm text-center bg-white '>
-              <img className='w-[70%]  max-[800px]:mb-3 ml-auto mr-auto mt-4'
-                  src={JavaScript}
-                  alt='javascript icon' />
-            </div>
-            <div className='w-[110px] ml-3 h-content  mt-4 rounded shadow-sm text-center bg-white '>
-              <img className='w-[70%] max-[800px]:mb-3 ml-auto mr-auto mt-4'
-                  src={TypeScript}
-                  alt='Typescript icon' />
-            </div>
-            <div className='w-[110px] ml-3 mt-4  h-content rounded shadow-sm text-center bg-white '>
-              <img className='w-[70%] max-[800px]:mb-3 ml-auto mr-auto mt-5'
-                  src={ReactJs}
-                  alt='React icon' />
-            </div>
-            <div className='w-[110px]  h-content ml-3 mt-4 rounded shadow-sm text-center bg-white '>
-              <img className='w-[70%] max-[800px]:mb-3 ml-auto mr-auto mt-6'
-                  src={VueJs}
-                  alt='Vue.js icon' />
-            </div>
-            <div className='w-[110px] ml-3 mt-4 rounded shadow-sm text-center bg-white '>
-              <img className='w-[80%] max-[800px]:mb-3 ml-auto mr-auto mt-7'
-                  src={PHP}
-                  alt='PHP icon' />
-            </div>
-            <div className='w-[110px] ml-3  mt-4 rounded shadow-sm text-center bg-white '>
-              <img className='w-[70%] mb-3 max-[800px]:mb-3 ml-auto mr-auto mt-5'
-                  src={Laravel}
-                  alt='Laravel icon' />
-            </div>
+            <ReusableImage
+               imgContainerStyle='w-[110px] ml-3 mt-4  rounded shadow-sm text-center bg-white'
+               imgStyle='w-[50%] max-[800px]:mb-3 ml-auto mr-auto mt-5 mb-3'
+               src={HTML}
+               alt='HTML Icon'
+
+            />
+            <ReusableImage
+               imgContainerStyle='w-[110px] ml-3 mt-4  rounded shadow-sm text-center bg-white'
+               imgStyle='w-[50%] max-[800px]:mb-3 ml-auto mr-auto mt-5 mb-3'
+               src={CSS}
+               alt='CSS Icon'
+
+            />
+           
+            <ReusableImage
+               imgContainerStyle='w-[110px] h-content ml-3 mt-4  rounded shadow-sm text-center bg-white '
+               imgStyle='w-[50%] max-[800px]:mb-3 ml-auto mr-auto mt-10'
+               src={Tailwind}
+               alt='Tailwind css Icon'
+
+            />
+            <ReusableImage
+               imgContainerStyle='w-[110px] h-content ml-3 mt-4 rounded shadow-sm text-center bg-white '
+               imgStyle='w-[70%] max-[800px]:mb-3 ml-auto mr-auto mt-4'
+               src={JavaScript}
+               alt='Javascript Icon'
+
+            />
+             <ReusableImage
+               imgContainerStyle='w-[110px] h-content ml-3 mt-4 rounded shadow-sm text-center bg-white '
+               imgStyle='w-[70%] max-[800px]:mb-3 ml-auto mr-auto mt-4'
+               src={TypeScript}
+               alt='TypeScript Icon'
+
+            />
+             <ReusableImage
+               imgContainerStyle='w-[110px] h-content ml-3 mt-4 rounded shadow-sm text-center bg-white '
+               imgStyle='w-[70%] max-[800px]:mb-3 ml-auto mr-auto mt-5'
+               src={ReactJs}
+               alt='ReactJs Icon'
+
+            /> 
+            <ReusableImage
+              imgContainerStyle='w-[110px] h-content ml-3 mt-4 rounded shadow-sm text-center bg-white '
+              imgStyle='w-[70%] max-[800px]:mb-3 ml-auto mr-auto mt-6'
+              src={VueJs}
+              alt='VueJs Icon'
+
+            />
+            <ReusableImage
+               imgContainerStyle='w-[110px] ml-3 mt-4 rounded shadow-sm text-center bg-white '
+               imgStyle='w-[80%] max-[800px]:mb-3 ml-auto mr-auto mt-4'
+               src={PHP}
+               alt='PHP Icon'
+
+            />
+            <ReusableImage
+               imgContainerStyle='w-[110px] ml-3 mt-4 rounded shadow-sm text-center bg-white '
+               imgStyle='w-[70%] max-[800px]:mb-3 ml-auto mr-auto mt-4'
+               src={Laravel}
+               alt='Laravel Icon'
+
+            />
+         
           
           </div>
     </section>
