@@ -6,7 +6,7 @@ const ReusableButton = (props:ButtonPropsType) => {
  
   return (
     <div>
-        <button className={`${className}`}>
+        <button className={`${className} hover:border-black hover:border-solid`}>
             {text}
         </button>
     </div>

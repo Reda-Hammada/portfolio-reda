@@ -1,11 +1,6 @@
 import {createSlice,createAsyncThunk} from '@reduxjs/toolkit';
+import { initialStateType } from './InitialState.type';
 
-interface initialStateType {
-    projects:[],
-    success:boolean,
-    error:boolean,
-
-}
 const initialState:initialStateType = {
     projects:[],
     success:false,

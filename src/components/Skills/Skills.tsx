@@ -9,15 +9,17 @@ import ReactJs from '../../assets/images/react.svg'
 import VueJs from '../../assets/images/vue.svg'
 import PHP from '../../assets/images/php.svg'
 import Laravel from '../../assets/images/laravel.svg'
+import Github from '../../assets/images/github-icon.svg'
+import Git from '../../assets/images/git-icon.svg'
 
 const Skills = () => {
   return (
-    <section className='bg-gray-100 w-[100%] pb-32  pl-32 pt-12 mb-16'>
+    <section className='bg-gray-100 w-[100%] pb-32 max-[800px]:pl-0 pl-32 pt-12 mb-16'>
 
-        <div className=' max-[800px]:w-[50%] max-[800px]:mr-auto  max-[800px]:ml-auto w-[70%] text-start  mt-10 mr-4 font-[900] text-[2rem]   '>
-          <h2>Skills</h2>
+        <div className=' max-[800px]:w-[95%] max-[800px]:mr-auto  max-[800px]:ml-auto w-[100%]   mt-10 mr-4 font-[900] text-[2rem]   '>
+          <h2 className='max-[800px]:text-center'>Skills</h2>
         </div>
-        <div className='flex  max-[800px]:w-[100%]  flex-wrap mt-7 w-[90m%]'>
+        <div className='flex justify-start max-[800px]:w-[95%] max-[800px]:mr-auto max-[800px]:ml-auto flex-wrap mt-7 w-[100%]'>
             <ReusableImage
                imgContainerStyle='w-[110px] ml-3 mt-4  rounded shadow-sm text-center bg-white'
                imgStyle='w-[50%] max-[800px]:mb-3 ml-auto mr-auto mt-5 mb-3'
@@ -70,7 +72,7 @@ const Skills = () => {
             />
             <ReusableImage
                imgContainerStyle='w-[110px] ml-3 mt-4 rounded shadow-sm text-center bg-white '
-               imgStyle='w-[80%] max-[800px]:mb-3 ml-auto mr-auto mt-4'
+               imgStyle='w-[80%] max-[800px]:mb-3 ml-auto mr-auto mt-7'
                src={PHP}
                alt='PHP Icon'
 
@@ -81,9 +83,21 @@ const Skills = () => {
                src={Laravel}
                alt='Laravel Icon'
 
-            />
-         
-          
+            />  
+            <ReusableImage
+               imgContainerStyle='w-[110px] ml-3 mt-4 rounded shadow-sm text-center bg-white '
+               imgStyle='w-[70%] max-[800px]:mb-3 ml-auto mr-auto mt-4'
+               src={Github}
+               alt='Github Icon'
+
+            />  
+            <ReusableImage
+               imgContainerStyle='w-[110px] ml-3 mt-4 rounded shadow-sm text-center bg-white '
+               imgStyle='w-[70%] pt-2 pb-2 max-[800px]:mb-3 ml-auto mr-auto mt-1 max-[800px]:mt-4' 
+               src={Git}
+               alt='Laravel Icon'
+
+            />                
           </div>
     </section>
   )

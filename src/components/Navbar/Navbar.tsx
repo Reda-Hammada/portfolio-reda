@@ -1,15 +1,21 @@
 import React, {useState} from 'react';
 import { motion } from 'framer-motion';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {useToggle} from '../../hooks/useToggle/useToggle';
+import List from '../List/List';
 
 const Navbar = () => {
 
-    const [isAnimationVisible, setAnimationVisible] = useState(false);
+    const [isAnimationVisible, toggle] = useToggle();
+    const isToggleFunction = typeof toggle === 'function';
 
-    const handleNavBarVisibility = () =>  setAnimationVisible(!isAnimationVisible);
-
+    // Handler for the FontAwesomeIcon onClick event
+    const handleIconClick = () => {
+      if (isToggleFunction) {
+        toggle(); // Call the toggle function
+      }
+    };
     
   return (
     <header className='w-full fixed bg-white z-10 font-[900] shadow-sm '>
@@ -21,16 +27,25 @@ const Navbar = () => {
 
                 {/*navbar list for large screens  */}
                 <ul className='lg:flex min-[320px]:hidden   mr-12 mt-6 justify-between'>
-                    <li className='mr-7 cursor-pointer hover:text-[#147efb]'>Home</li>
-                    <li className='mr-7 cursor-pointer hover:text-[#147efb]'>Skills</li>
-                    <li className='mr-7 cursor-pointer hover:text-[#147efb]'>Projects</li>
-                    <li className='mr-7 cursor-pointer hover:text-[#147efb]'>About</li>
-                    <li className='mr-7 cursor-pointer hover:text-[#147efb]'>Contact</li>
-
+                    <List className='mr-7 cursor-pointer hover:text-[#147efb]'
+                          text='Home'
+                    />
+                     <List className='mr-7 cursor-pointer hover:text-[#147efb]'
+                          text='Skills'
+                    />
+                     <List className='mr-7 cursor-pointer hover:text-[#147efb]'
+                          text='Projects'
+                    />
+                     <List className='mr-7 cursor-pointer hover:text-[#147efb]'
+                          text='About'
+                    />
+                     <List className='mr-7 cursor-pointer hover:text-[#147efb]'
+                          text='Contact'
+                  />
                 </ul>
                 {/* Navbar burger */}
                 <FontAwesomeIcon className='font-[900] cursor-pointer hover:text-[#147efb] lg:hidden mr-12 mt-6 text-2xl'
-                                 onClick={handleNavBarVisibility}
+                                 onClick={handleIconClick}
                                  icon={faBars} 
                                  size='lg'/>
 
@@ -39,14 +54,24 @@ const Navbar = () => {
             <motion.div  className='bg-white absolute h-screen lg:hidden max-[800px]:block  w-screen bottom-0 top-0 left-0 '
                          animate={{x: isAnimationVisible? 0 : 2000}}
                          transition={{ ease: "easeInOut", duration: 0.5 }}>
-             <div   onClick={handleNavBarVisibility}
+             <div   onClick={handleIconClick}
                     className='font-extrabold	 w-[100%] ml-[85%] text-[30px] rounded hover:text-[#147efb] cursor-pointer font-poppins mr-12 mt-5 mb-12'>X</div>
-             <ul className=' flex-col text-center w-[100%] text-2xl mt-28 mr-12 mt-6 justify-center'>
-                    <li className='mr-7 cursor-pointer mb-6 hover:text-[#147efb]'>Home</li>
-                    <li className='mr-7 cursor-pointer mb-6  hover:text-[#147efb]'>Skills</li>
-                    <li className='mr-7 cursor-pointer mb-6  hover:text-[#147efb]'>Projects</li>
-                    <li className='mr-7 cursor-pointer mb-6 hover:text-[#147efb]'>About</li>
-                    <li className='mr-7 cursor-pointer mb-6 hover:text-[#147efb]'>Contact</li>
+               <ul className=' flex-col text-center w-[100%] text-2xl mt-28 mr-12 mt-6 justify-center'>
+                    <List className='mr-7 mb-6 cursor-pointer hover:text-[#147efb]'
+                          text='Home'
+                    />
+                     <List className='mr-7 mb-6 cursor-pointer hover:text-[#147efb]'
+                          text='Skills'
+                    />
+                     <List className='mr-7 mb-6 cursor-pointer hover:text-[#147efb]'
+                          text='Projects'
+                    />
+                     <List className='mr-7  mb-6 cursor-pointer hover:text-[#147efb]'
+                          text='About'
+                    />
+                     <List className='mr-7  mb-6 cursor-pointer hover:text-[#147efb]'
+                          text='Contact'
+                    />
                 </ul>
             </motion.div>
         </nav>
