@@ -5,7 +5,7 @@ import { SocialIcon } from 'react-social-icons'
 
 const Hero = () => {
   return (
-   <div className='bg-gray-100 justify-evenly pb-12 pt-32 ml-auto mr-auto flex  flex-wrap w-[100%]'>
+   <div className='bg-gray-100  justify-evenly pb-12 pt-32 ml-auto mr-auto flex  flex-wrap w-[100%]'>
         <section className='mt-7 lg:w-[50%] max-[800px]:text-center max-[800px]:order-1 max-[800px]:w-[91%]'>
             <h2 className='text-[#2d2e32] m font-[900] text-[2.5rem]'>
                 Full stack web developer 
@@ -13,9 +13,11 @@ const Hero = () => {
             <p className='font-thin max-[800px]:w-[100%] max-[800px]:text-center text-xl lg:w-[75%] mt-2'>
                 Hey, I am Reda a passionate web developer based in Morocco 
             </p>
-            <div>
+            <div >
+                <a href='https://drive.google.com/uc?export=download&id=1HH7fxsuzIZvBBIT09kaOGEMfEPmZ7cT_'>
                 <ReusableButton text='Download my resume'
                                 className='bg-black text-white rounded hover:shadow-2xl mt-5 w-[200px] h-[40px]' />
+                </a>     
             </div>
             <div className='mt-9'>
                 <SocialIcon className=''

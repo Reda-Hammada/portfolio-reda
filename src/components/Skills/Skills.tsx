@@ -14,12 +14,12 @@ import Git from '../../assets/images/git-icon.svg'
 
 const Skills = () => {
   return (
-    <section className='bg-gray-100 w-[100%] pb-32 max-[800px]:pl-0 pl-32 pt-12 mb-16'>
+    <section className='bg-gray-100 w-[100%] pb-32 max-[800px]:pl-0 pl-32 pt-12 '>
 
-        <div className=' max-[800px]:w-[95%] max-[800px]:mr-auto  max-[800px]:ml-auto w-[100%]   mt-10 mr-4 font-[900] text-[2rem]   '>
+        <div className=' max-[800px]:w-[100%] max-[800px]:mr-auto  max-[800px]:ml-auto w-[100%]   mt-10 mr-4 font-[900] text-[2rem]   '>
           <h2 className='max-[800px]:text-center'>Skills</h2>
         </div>
-        <div className='flex justify-start max-[800px]:w-[95%] max-[800px]:mr-auto max-[800px]:ml-auto flex-wrap mt-7 w-[100%]'>
+        <div className='flex justify-start max-[800px]:w-[95%] max-[800px]:justify-center mr-auto ml-auto max-[800px]:mr-auto max-[800px]:ml-auto flex-wrap mt-7 w-[100%]'>
             <ReusableImage
                imgContainerStyle='w-[110px] ml-3 mt-4  rounded shadow-sm text-center bg-white'
                imgStyle='w-[50%] max-[800px]:mb-3 ml-auto mr-auto mt-5 mb-3'

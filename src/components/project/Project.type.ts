@@ -8,5 +8,7 @@ export type ProjectTypeProps = {
     img:string,
     linkFront?:string,
     linkBack?:string,
-    List:ReactNode,
+    sourceCode?:string,
+    linkLive?:string,
+    List:string[] ,
 }

@@ -1,13 +1,13 @@
-import React, {useState} from 'react';
+import React, {useEffect} from 'react';
 import { motion } from 'framer-motion';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {useToggle} from '../../hooks/useToggle/useToggle';
-import List from '../List/List';
+import {ReusableList} from '../List/ReusableList';
 
 const Navbar = () => {
 
-    const [isAnimationVisible, toggle] = useToggle();
+  const [isAnimationVisible, toggle] = useToggle();
     const isToggleFunction = typeof toggle === 'function';
 
     // Handler for the FontAwesomeIcon onClick event
@@ -16,6 +16,10 @@ const Navbar = () => {
         toggle(); // Call the toggle function
       }
     };
+
+    
+
+  
     
   return (
     <header className='w-full fixed bg-white z-10 font-[900] shadow-sm '>
@@ -27,19 +31,19 @@ const Navbar = () => {
 
                 {/*navbar list for large screens  */}
                 <ul className='lg:flex min-[320px]:hidden   mr-12 mt-6 justify-between'>
-                    <List className='mr-7 cursor-pointer hover:text-[#147efb]'
+                    <ReusableList className='mr-7 cursor-pointer hover:text-[#147efb]'
                           text='Home'
                     />
-                     <List className='mr-7 cursor-pointer hover:text-[#147efb]'
+                     <ReusableList className='mr-7 cursor-pointer hover:text-[#147efb]'
                           text='Skills'
                     />
-                     <List className='mr-7 cursor-pointer hover:text-[#147efb]'
+                     <ReusableList className='mr-7 cursor-pointer hover:text-[#147efb]'
                           text='Projects'
                     />
-                     <List className='mr-7 cursor-pointer hover:text-[#147efb]'
+                     <ReusableList className='mr-7 cursor-pointer hover:text-[#147efb]'
                           text='About'
                     />
-                     <List className='mr-7 cursor-pointer hover:text-[#147efb]'
+                     <ReusableList className='mr-7 cursor-pointer hover:text-[#147efb]'
                           text='Contact'
                   />
                 </ul>
@@ -57,19 +61,19 @@ const Navbar = () => {
              <div   onClick={handleIconClick}
                     className='font-extrabold	 w-[100%] ml-[85%] text-[30px] rounded hover:text-[#147efb] cursor-pointer font-poppins mr-12 mt-5 mb-12'>X</div>
                <ul className=' flex-col text-center w-[100%] text-2xl mt-28 mr-12 mt-6 justify-center'>
-                    <List className='mr-7 mb-6 cursor-pointer hover:text-[#147efb]'
+                    <ReusableList className='mr-7 mb-6 cursor-pointer hover:text-[#147efb]'
                           text='Home'
                     />
-                     <List className='mr-7 mb-6 cursor-pointer hover:text-[#147efb]'
+                     <ReusableList className='mr-7 mb-6 cursor-pointer hover:text-[#147efb]'
                           text='Skills'
                     />
-                     <List className='mr-7 mb-6 cursor-pointer hover:text-[#147efb]'
+                     <ReusableList className='mr-7 mb-6 cursor-pointer hover:text-[#147efb]'
                           text='Projects'
                     />
-                     <List className='mr-7  mb-6 cursor-pointer hover:text-[#147efb]'
+                     <ReusableList className='mr-7  mb-6 cursor-pointer hover:text-[#147efb]'
                           text='About'
                     />
-                     <List className='mr-7  mb-6 cursor-pointer hover:text-[#147efb]'
+                     <ReusableList className='mr-7  mb-6 cursor-pointer hover:text-[#147efb]'
                           text='Contact'
                     />
                 </ul>
