@@ -3,7 +3,8 @@ import ReusableButton from '../Button/ReusableButton';
 
 const Contact = () => {
   return (
-    <div className='w-[100%] pb-12  pt-7  '>
+    <div   id='contact-section'
+            className='w-[100%] pb-12  pt-7  '>
         <div className='max-[800px]:text-center max-[800px]:w-[80%] max-[800px]:mr-auto max-[800px]:ml-auto w-[80%]  mt-5 mb-6 ml-28'>
             <h2 className='font-[900] text-[2rem]'>Get in Touch</h2>
 

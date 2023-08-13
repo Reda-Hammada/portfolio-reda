@@ -14,7 +14,8 @@ import Git from '../../assets/images/git-icon.svg'
 
 const Skills = () => {
   return (
-    <section className='bg-gray-100 w-[100%] pb-32 max-[800px]:pl-0 pl-32 pt-12 '>
+    <section id='skills-section'
+             className='bg-gray-100 w-[100%] pb-32 max-[800px]:pl-0 pl-32 pt-12 '>
 
         <div className=' max-[800px]:w-[100%] max-[800px]:mr-auto  max-[800px]:ml-auto w-[100%]   mt-10 mr-4 font-[900] text-[2rem]   '>
           <h2 className='max-[800px]:text-center'>Skills</h2>

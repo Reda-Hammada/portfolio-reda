@@ -31,21 +31,33 @@ const Navbar = () => {
 
                 {/*navbar list for large screens  */}
                 <ul className='lg:flex min-[320px]:hidden   mr-12 mt-6 justify-between'>
+                <a href='#home'>
                     <ReusableList className='mr-7 cursor-pointer hover:text-[#147efb]'
                           text='Home'
                     />
+                  </a>
+                  <a href='#skills-section'>
                      <ReusableList className='mr-7 cursor-pointer hover:text-[#147efb]'
                           text='Skills'
                     />
+                  </a>
+                  <a href='#projects-section'>
                      <ReusableList className='mr-7 cursor-pointer hover:text-[#147efb]'
                           text='Projects'
                     />
+                  </a>
+                  <a href='#about-section'>
+
                      <ReusableList className='mr-7 cursor-pointer hover:text-[#147efb]'
                           text='About'
                     />
+                  </a>
+                  <a href='#contact-section'>
+
                      <ReusableList className='mr-7 cursor-pointer hover:text-[#147efb]'
                           text='Contact'
                   />
+                  </a>
                 </ul>
                 {/* Navbar burger */}
                 <FontAwesomeIcon className='font-[900] cursor-pointer hover:text-[#147efb] lg:hidden mr-12 mt-6 text-2xl'
@@ -61,21 +73,36 @@ const Navbar = () => {
              <div   onClick={handleIconClick}
                     className='font-extrabold	 w-[100%] ml-[85%] text-[30px] rounded hover:text-[#147efb] cursor-pointer font-poppins mr-12 mt-5 mb-12'>X</div>
                <ul className=' flex-col text-center w-[100%] text-2xl mt-28 mr-12 mt-6 justify-center'>
+                  <a onClick={handleIconClick} href='#home'>
+
                     <ReusableList className='mr-7 mb-6 cursor-pointer hover:text-[#147efb]'
                           text='Home'
                     />
+                  </a>
+                  <a onClick={handleIconClick} href='#skills-section'>
+
                      <ReusableList className='mr-7 mb-6 cursor-pointer hover:text-[#147efb]'
                           text='Skills'
                     />
+                  </a>
+                  <a onClick={handleIconClick} href='#projects-section'>
+
                      <ReusableList className='mr-7 mb-6 cursor-pointer hover:text-[#147efb]'
                           text='Projects'
                     />
+                  </a>
+                  <a onClick={handleIconClick} href='#about-section'>
+
                      <ReusableList className='mr-7  mb-6 cursor-pointer hover:text-[#147efb]'
                           text='About'
                     />
+                  </a>
+                  <a onClick={handleIconClick} href='#contact-section'>
+
                      <ReusableList className='mr-7  mb-6 cursor-pointer hover:text-[#147efb]'
                           text='Contact'
                     />
+                  </a>
                 </ul>
             </motion.div>
         </nav>

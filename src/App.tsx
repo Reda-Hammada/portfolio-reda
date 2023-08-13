@@ -11,10 +11,10 @@ import Project from './components/Project/Project';
 
 function App() {
     return (
-      <div className="font-poppins overflow-x-hidden">
+      <div className="font-poppins overflow-x-hidden !scroll-smooth">
         <Navbar />
         <Hero />
-        <About />
+        <About/>
         <Skills />
         <Project />
         <Contact />

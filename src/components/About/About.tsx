@@ -3,7 +3,8 @@ import reda from '../../assets/images/coder.jpg'
 import ReusableImage from '../ImageComponent/ReusableImage'
 const About = () => {
   return (
-    <div className='w-[100%]   mt-12 mb-32'>
+    <div  id='about-section' 
+         className='w-[100%]    mt-12 mb-32'>
         <div className='max-[800px]:text-center max-[800px]:w-[80%] max-[800px]:mr-auto max-[800px]:ml-auto w-[80%]  mt-5 mb-6 ml-28'>
           <h2 className='  font-[900]  text-[2rem]'>About me</h2>
 

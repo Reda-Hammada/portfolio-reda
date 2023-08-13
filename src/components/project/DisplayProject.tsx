@@ -12,8 +12,9 @@
               <h3 className='font-[900] text-[1.4rem]'>{title}</h3>
 
           </div>
-          <div className=' w-[100%] flex mt-3 '>
-            <div className='w-[100%] flex-col'>
+          <div className=' w-[100%] flex max-[800px]:flex-col  mt-3 '>
+          
+            <div className='w-[100%] flex-col '>
               <p className='mt-2 ml-3 text-[1.2rem] w-[60%] max-[800px]:w-[100%]'>{description}</p>
               <ul className='list-disc mt-7 '>
               {List.map((listItem,index)=>(
@@ -41,19 +42,15 @@
               </div>: null}
               </div>
             </div>
-            <ReusableImage imgContainerStyle='w-[100%] '
-                            imgStyle='w-[80%] ml-12 mt-26   rounded-lg' 
+            <ReusableImage imgContainerStyle='w-[100%] max-[800px]:mt-4  max-[800px]:mb-4 max-[800px]:order-first '
+                            imgStyle='w-[80%] max-[800px]:w-[95%] ml-12 mt-26    rounded-lg' 
                             src={img} 
                             alt='project image' 
                             
                             />
-
             
           </div>
-          <div className='w-[100%]'>
-          
-          </div>
-            
+      
         <div>
 
         </div>

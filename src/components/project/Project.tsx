@@ -11,12 +11,13 @@
 
   const Project = () => {
     return (
-      <section className=' w-[100%] bg-gray-100  pb-28   max-[800px]:pl-0 pl-32 pt-6 '>
+      <section id='projects-section'
+               className=' w-[100%] bg-gray-100  pb-28   max-[800px]:pl-0 pl-32 pt-6 '>
       <div className='W-[100%] mt-5'>
         <div className=' max-[800px]:w-[95%] max-[800px]:mr-auto  max-[800px]:ml-auto w-[100%]   mt-10 mr-4 font-[900] text-[2rem]   '>
           <h2 className='max-[800px]:text-center'>Projects</h2>
         </div>          
-          <DisplayProject containerStyle='flex flex-wrap   mt-7 mb-12  w-[90%] rounded-md justify-between pl-4 pr-4  p-6  '
+          <DisplayProject   containerStyle='flex flex-wrap  mt-7 mb-12  w-[90%] rounded-md justify-between pl-4 pr-4  p-6  '
                             title='Manageme' 
                             description='Manageme provides a digital solution to manage your project effortlessly using Kanban style.The application offers board creation dedicated to your project by dividing your projects to tasks and subtasks.' 
                             img={manageme} 
@@ -38,7 +39,7 @@
                             title='EnviScope' 
                             description='EnviScope is a website I built using ReactJs and PHP MVC framework to build a content management dashboad for a design office based in Tangier,Morocco'
                             img={EnviScope} 
-                            List={['HTML','CSS','JavaScript','React.js','PHP(MVC Framework)', 'SQL/MySQL']}
+                            List={['HTML','CSS','JavaScript','React.js','PHP(MVC Framework)','SQL/MySQL']}
                             linkFront='https://github.com/Reda-Hammada/enviscope' 
                             linkBack='https://github.com/Reda-Hammada/enviscope-dashboard'
                             />
