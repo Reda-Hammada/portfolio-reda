@@ -21,7 +21,9 @@ const Navbar = () => {
       <nav className="w-[100%] pb-4 flex justify-between text-[#2d2e32]">
         <div className="ml-12 mt-6">
           <a href="#home">
-            <h1 className="text-xl">{"< Reda.dev /> "}</h1>
+            <h1 className="text-xl">
+              {"< Reda.dev /> "}
+            </h1>
           </a>
         </div>
         <div className="">
