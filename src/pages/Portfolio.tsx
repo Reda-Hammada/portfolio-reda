@@ -17,7 +17,6 @@ const Portfolio = () => {
         <Project />
         <Contact />
         <Footer />
-
     </div>
   )
 }
