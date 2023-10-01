@@ -1,19 +1,14 @@
-import React from 'react'
-import { ButtonPropsType } from './Button.type';
-const ReusableButton = (props:ButtonPropsType) => {
+import React from "react";
+import { ButtonPropsType } from "./Button.type";
 
- const {text,className} = props;
- 
+const ReusableButton = ({ text, className }: ButtonPropsType) => {
   return (
     <div>
-        <button className={`${className} hover:border-black hover:border-solid`}>
-            {text}
-        </button>
+      <button className={`${className} hover:border-black hover:border-solid`}>
+        {text}
+      </button>
     </div>
-  )
-}
+  );
+};
 
-
-
-
-export default ReusableButton
+export default ReusableButton;

@@ -1,6 +1,7 @@
 import React from 'react'
 import reda from '../../assets/images/coder.jpg'
 import ReusableImage from '../ImageComponent/ReusableImage'
+
 const About = () => {
   return (
     <div  id='about-section' 
