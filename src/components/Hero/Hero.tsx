@@ -17,7 +17,7 @@ const Hero = () => {
           Hey, I am Reda a passionate web developer based in Kenitra, Morocco
         </p>
         <div>
-          <a href="https://drive.google.com/uc?export=download&id=1HH7fxsuzIZvBBIT09kaOGEMfEPmZ7cT_">
+          <a href="https://drive.google.com/uc?export=download&id=1gwsfLAaoPOt7rw6FlAtnte4rWD4_rR31">
             <ReusableButton
               text="Download my resume"
               className="bg-black text-white rounded hover:shadow-2xl mt-5 w-[200px] h-[40px]"
@@ -40,7 +40,7 @@ const Hero = () => {
         <img
           className="rounded-full h-[250px]"
           src={reda}
-          alt="Reda Hammada portfolio image"
+          alt="Reda Hammada portfolio"
         />
       </section>
     </div>
